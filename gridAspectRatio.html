@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<title>Flashcards</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  
+  /************************** get aspect ratio set **************************/
+  .aspect {
+/*    height: 100%;*/  /* not working in ang */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-top: 135%; /* this drives aspect ratio - note % based on width of container */
+  }
+  .deck {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  } 
+
+/*****************  margins etc********************/
+  .deckSelect {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .col-12, .col-md-3, .col-sm-6 {
+    max-width: 300px;
+    margin: auto;
+  }
+  .deckList .col-12,.deckList .col-md-3,.deckList .col-sm-6 {
+    min-height: 20vh;
+  }
+
+  /*****************  colors etc ********************/
+  .questionSide {
+    background-image:  url("../img/twinkle-twinkle.png");
+  }
+  .card, .liveCard, .spreadCards, .deck {
+    background-color: #4444a7;
+    text-align: center;
+    border-radius: 1.5vw;
+  }  
+  .deck {
+    border: calc(10px + .7vw) solid #e6e5e5;
+    font-size: calc(16px + .5vw);
+    line-height: 1.2;
+  /*  padding: 2%;*/
+    padding: 5px;
+  }
+
+  body {
+    background: url("../img/wood3.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body, html {
+      height: 100%;
+      line-height: 1.8;
+      box-sizing:border-box;
+      overflow: scroll;
+      overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+  }
+
+</style>  
+  
+<body id="main">
+
+  <div class="deckSelect container">
+    
+    <div class = "deckList row">
+      
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-4 col-sm-6">        
+        <div class="aspect">
+          <div class="deck questionSide">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
